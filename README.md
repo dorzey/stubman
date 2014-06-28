@@ -1,13 +1,17 @@
 # stubman [![Build Status](https://secure.travis-ci.org/dorzey/stubman.png?branch=master)](http://travis-ci.org/dorzey/stubman)
 
-Turns a Postman collection into a stub server
+Turns a Postman collection into a stub server. *WARNING* This is a work in progress; use at your own risk.
+
+The only supported functionality is binding the path to either PUT/GET/DELETE/POST method and returning 200. More to follow.
+
 
 ## Getting Started
 Install the module with: `npm install stubman`
 
-```javascript
-var stubman = require('stubman');
-stubman.awesome(); // "awesome"
+Run Stubman with a collection. With the `-c` flag you can run any collection file lying on your file-system. Refer [the collection documentation](http://www.getpostman.com/docs/collections) to learn how to use and download collections.
+
+```bash
+$ newman -c mycollection.json
 ```
 
 ## Documentation
