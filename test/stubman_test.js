@@ -27,8 +27,9 @@ exports['stubman'] = {
     // setup here
     done();
   },
-  'no args': function(test) {
-    stubman();
+  'verify METHODS are all present': function(test) {
+    console.log(stubman);
+    test.expect(0);
     test.done();
   },
 };
