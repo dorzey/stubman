@@ -30,7 +30,7 @@
   },
   "preferGlobal": "true",
   "bin": {
-    "stubman": "lib/stubman.js"
+    "stubman": "bin/stubman.js"
   },
   "dependencies": {
       "commander": "~2.2.0",
