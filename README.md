@@ -17,7 +17,7 @@ Install the module with: `npm install stubman`
 Run Stubman with a collection. With the `-c` flag you can run any collection file lying on your file-system. Refer [the collection documentation](http://www.getpostman.com/docs/collections) to learn how to use and download collections.
 
 ```bash
-$ newman -c mycollection.json
+$ stubman -c mycollection.json
 ```
 
 ## Documentation
