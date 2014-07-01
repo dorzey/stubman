@@ -1,5 +1,12 @@
-var HttpMethods = require('../../../lib/stubman/enum/http_methods');
+/*
+ * stubman
+ * https://github.com/dorzey/stubman
+ *
+ * Copyright (c) 2014 Paul Doran
+ * Licensed under the MIT license.
+ */
 
+var HttpMethods = require('../../../lib/stubman').Enums.HttpMethods;
 
 exports.group = {
     test_get: function (test) {
