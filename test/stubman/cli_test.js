@@ -6,11 +6,11 @@
  * Licensed under the MIT license.
  */
 
-var Enums = require('../../lib/stubman').Enums;
+var Cli = require('../../lib/stubman').Cli;
 
 exports.group = {
-    test_HttpMethods_defined: function (test) {
-        test.notEqual(Enums.HttpMethods, undefined);
+    test_Cli_Main_is_defined: function (test) {
+        test.notEqual(Cli.Main, undefined);
         test.done();
     }
 };
