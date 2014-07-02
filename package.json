@@ -34,7 +34,8 @@
   },
   "dependencies": {
       "commander": "~2.2.0",
-      "express": "~4.4.5"
+      "express": "~4.4.5",
+      "body-parser": "~1.4.3"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
