@@ -19,7 +19,7 @@
 
         <header>
           <h1>Stubman</h1>
-          <h2>Turns a Postman collection into a stub server.</h2>
+          <h2>Turns a <a href="http://www.getpostman.com/">Postman</a> collection into a stub server.</h2>
         </header>
 
         <section id="downloads" class="clearfix">
@@ -30,18 +30,33 @@
 
         <section id="main_content">
 
-<p>The only supported functionality is binding the path to either PUT/GET/DELETE/POST method, returning 200 and echoing back the first saved response. More to follow.</p>
-
-
 <h3>
-<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h3>
+<a name="motivation" class="anchor" href="#motivation"><span class="octicon octicon-link"></span></a>Motivation</h3>
+
+<p>
+External API integration is inevitable in a modern web app. 
+A stub server facilitates effective testing of this integration.
+It stub should be easy to create and maintain.
+</p>
+<p>
+Postman is a tool that helps to efficiently test web APIs. Your Postman collection becomes a semi-formal specification of that API's behaviour.
+</p>
+<p>
+Stubman uses this collection to generate a stub server; reflecting the specified behaviour. This removes the need to maintain a separate stub server implementation.
+</p>
+<h3><a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h3>
+
+<p>The only supported functionality is binding the path to either PUT/GET/DELETE/POST method, returning 200 and echoing back the first saved response. More to follow.</p>
 
 <p>Install the module with:</p>
 
 <pre><code>$ npm install stubman
 </code></pre>
 
-<p>Run Stubman with a collection. With the `-c` flag you can run any collection file lying on your file-system. Refer [the collection documentation](http://www.getpostman.com/docs/collections) to learn how to use and download collections.</p>
+<p>
+Run Stubman with a collection.
+The `-c` flag allows you to specify a <a href="http://www.getpostman.com/docs/collections">collection</a> file on your file-system.
+</p>
 
 <pre><code>$ stubman -c mycollection.json
 </code></pre>
