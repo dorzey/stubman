@@ -6,7 +6,7 @@
  * Licensed under the MIT license.
  */
 
-var Main = require('../../../lib/stubman').Cli.Main();
+var Runtime = require('../../../lib/stubman').Server.Runtime();
 
 var mockResponse = function(){
     var self = {};
@@ -29,7 +29,7 @@ exports.group = {
         var headerTwo = {key: 'Connection', value: 'keep-alive'};
         var expectedheaders = [headerOne, headerTwo];
 
-        Main._setHeaders(res, expectedheaders);
+        Runtime._setHeaders(res, expectedheaders);
 
         test.equal(res.headers.length, 2);
         test.equal(res.headers[0]['Content-Type'], headerOne.value);
