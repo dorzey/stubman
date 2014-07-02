@@ -17,7 +17,7 @@ var mockResponse = function(){
         var header = {};
         header[k] = v;
         self.headers.push(header);
-    }
+    };
 
     return self;
 };
@@ -36,4 +36,4 @@ exports.group = {
         test.equal(res.headers[1]['Connection'], headerTwo.value);
         test.done();
     }
-}
+};
