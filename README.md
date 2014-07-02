@@ -10,6 +10,7 @@ Turns a Postman collection into a stub server. *WARNING* This is a work in progr
 
 The only supported functionality is binding the path to either PUT/GET/DELETE/POST method and returning 200. More to follow.
 
+The aim to to be able to take any Postman collection, generate a stub server from that collection, use that collection to run tests against the stub and get them to pass.
 
 ## Getting Started
 Install the module with: `npm install stubman`
