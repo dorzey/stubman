@@ -2,7 +2,7 @@
   "name": "stubman",
   "description": "Turns a Postman collection into a stub server",
   "version": "0.0.2",
-  "homepage": "https://github.com/dorzey/stubman",
+  "homepage": "http://stubman.dorzey.net",
   "author": {
     "name": "Paul Doran",
     "email": "dorzey@gmail.com",
