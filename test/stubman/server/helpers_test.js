@@ -26,3 +26,29 @@ exports.group = {
        test.done();
    }
 };
+
+exports.group = {
+    test_should_split_collection_data_by_url_and_group_by_method: function(test){
+        var collectionData = {
+            requests: [
+                {url: '/test', method: 'GET'},
+                {url: '/test', method: 'GET'},
+                {url: '/test', method: 'PUT'},
+                {url: '/test', method: 'PUT'},
+                {url: '/other', method: 'GET'},
+                {url: '/other', method: 'GET'},
+                {url: '/other', method: 'PUT'},
+                {url: '/other', method: 'PUT'}
+            ]
+        };
+
+        var groupedByUrl = Helpers.groupRequestsByUrl(collectionData);
+
+        test.equal(groupedByUrl['/test']['GET'].length, 2);
+        test.equal(groupedByUrl['/test']['PUT'].length, 2);
+        test.equal(groupedByUrl['/other']['GET'].length, 2);
+        test.equal(groupedByUrl['/other']['PUT'].length, 2);
+
+        test.done();
+    }
+};
